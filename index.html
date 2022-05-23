@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css"  href="./css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/semantic.min.js"></script>
+    <script src="./renderer.js"></script>
+    <title>Test Accesos Directos</title>
+  </head>
+  <body>
+    <div class="ui container">
+
+<h1>Testing Accesos Directos</h1>
+<h2><strong id="idTasa"></strong></h2>
+
+<div class="ui card __card">
+  <div class="content __content">
+  <div class="header">Sin Accesos Directos</div>
+    <div class="description">
+      <button id="idIniBtn" class="ui primary button">Inicio</button>
+      <input id="idIniInput" class="ui input"></input>
+      <div id="idLblRes" class="floating ui red label hidden"></div>
+      <button id="idFinBtn" class="ui secondary button">Fin</button>
+    </div>
+    <table class="ui celled striped table">
+      <thead>
+        <tr>
+          <th>Nº</td>
+          <th>Paso</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Oprimir el botón "Inicio"</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Escribir la palabra "inicio" en el campo de texto</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Oprimir el botón "Fin"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+        
+<div class="ui card __card">
+  <div class="content __content">
+    <div class="header">Con Accesos Directos</div>
+    <div class="description">
+        <input id="idIniInput2" class="ui input"></input>
+    </div>
+    <div id="idLblRes2" class="floating ui red label hidden"></div>
+        <table class="ui celled striped table">
+        <thead>
+            <tr>
+            <th>Nº</td>
+            <th>Paso</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Haga click en el campo de texto</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Incie con las teclas "Ctrl+s"</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Escriba la palabra "input"</td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Termine la medición con la combinación "Ctrl+f"</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
