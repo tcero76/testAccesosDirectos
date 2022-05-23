@@ -1,4 +1,4 @@
-* Tester accesos directos.
+# Tester accesos directos.
 
 App para demostrar la mejora en la productividad utilizando accesos directos para interactuar con las aplicaciones.
 
@@ -7,22 +7,21 @@ Por medio de 2 ejemplos, la app muestra la reducción de tiempo que implica el u
 
 ![Vista App](./img/main.png)
 
-* Instrucciones
+# Instrucciones
 
-** Utilizando node:
+## Utilizando node:
 
-> Instalar librerías:
+Instalar librerías:
 
 ```js
 npm install
 npm start
 ```
 
-** Auto ejecutable:
+## Auto ejecutable:
 
 Para crear un ejecutable:
 
 ```js
 npx electron-packager .
-
 ```
